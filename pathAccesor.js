@@ -1,6 +1,6 @@
 
 var cache = [];
-return function createAccesor(accessPath) {
+ function createAccesor(accessPath) {
   if (!cache[accessPath]) {
     var keys = accessPath.replace(/[\],\[,\.]+/g, ".").split(".");
     if (keys[0] === "") {
